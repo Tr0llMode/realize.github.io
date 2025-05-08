@@ -503,7 +503,7 @@ width: 100%;
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-image: url(/Polygon.svg);
+  background-image: url(./Polygon.svg);
   background-repeat: no-repeat; /** убираем артефакт*/
   background-position: center;
   margin-right: 15px;
@@ -515,7 +515,7 @@ width: 100%;
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-image: url(/Polygon.svg);
+  background-image: url(./Polygon.svg);
   background-repeat: no-repeat; /** убираем артефакт*/
   background-position: center;
   margin-right: 15px;
