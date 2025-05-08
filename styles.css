@@ -57,7 +57,7 @@ body {
     font-size: 21px;
   }
   .text-p {
-    font-family: 'Open Sans';
+    font-family: 'Oswald';
     font-weight: 400;
     font-size: 16px;
   }
@@ -452,7 +452,7 @@ width: 100%;
 }
 
 .question {
-  padding-top: 130px;
+  padding-top: 119px;
   padding-bottom: 167px;
 }
 .question .text-h4 {
@@ -564,4 +564,49 @@ margin-right: 0;
   .partners__item:nth-child(5n) { /*! nth-child(5n) - каждый 5ый элемент будет без margin-right*/
     margin-right: 40px;
     }
+}
+
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.review__flex {
+  display: flex;
+}
+.review__item {
+  padding: 64px 30px 38px 30px;
+  width: 350px;
+  height: 260px;
+}
+.review__mark {
+  content: "";
+  display: inline-block;
+width: 34px;
+height: 29px;
+  background-image: url(./shit.svg);
+  margin-bottom: 19px;
+}
+.reviews__h4 {
+}
+
+.review__color {
+  background-color: rgb(247, 247, 247);
+  padding: 31px 30px 38px 30px;
+}
+.text-h4a {
+  color: rgb(0, 0, 0);
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 53px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.reviews__h4-accent {
+  color: var(--accent-color);
+}
+
+.review-p {
+  color: var(--gray-color);
 }
