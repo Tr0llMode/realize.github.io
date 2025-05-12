@@ -488,26 +488,11 @@ width: 100%;
   color: var(--accent-color);
   margin-bottom: 21px;
 }
-.question-h3.close {
-  margin-bottom: 38px;
-}
 
 .question-p {
   margin-bottom: 33px;
   color: var(--gray-color);
   max-width: 730px;
-}
-
-.question-h3.open::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url(./Polygon.svg);
-  background-repeat: no-repeat; /** убираем артефакт*/
-  background-position: center;
-  margin-right: 15px;
-  transform: rotate(0deg); /** поворот стрелки */
 }
 
 .question-h3.close::before {
@@ -520,10 +505,6 @@ width: 100%;
   background-position: center;
   margin-right: 15px;
   transform: rotate(90deg); /** поворот стрелки */
-}
-
-.question-h3.close + .question-p { /*? настройка стилей для question.p но с тем который находится рядом с question-h3. */
-display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -617,6 +598,11 @@ height: 29px;
   gap: 30px;
   margin-top: 60px;
 }
+.contact__h5 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .contact-flex-item {
   width: 255px;
   height: 191px;
