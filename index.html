@@ -8,19 +8,43 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link type="text/css" rel="stylesheet" href="materialize.css" media="screen,projection" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <a href="#!"><i class="material-icons">home</i>Главная</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">people</i>О нас</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">grade</i>Услуги</a>
+        </li>
+        <li>
+            <a href="#!"><i class="material-icons">phone</i>Контакты</a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a>
+        </li>
+    </ul>
+
     <header class="header">
         <div class="container">
             <div class="header__title">
                 <img src="photo/logo.svg" alt="Logo" class="logo">
-                <button class="burger">
+                <a class="burger sidenav-trigger" data-target="slide-out">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
-                </button>
+                </a>
             </div>
             <h1 class="h1">Реализуем крупнейшие проекты в России</h1>
             <h4 class="h4">Стадионы, газопроводы, мосты, дамбы</h4>
@@ -80,6 +104,32 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Жир</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint enim tenetur perferendis quisquam
+                    minus. Non voluptatibus nemo inventore similique. Ducimus.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <h4>Здоровье</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque laudantium odit eaque aut autem
+                    expedita consequatur quod, iure sit. Et sed provident quod molestias aliquam sit, sapiente explicabo
+                    quasi repellat exercitationem molestiae in, nam rerum, impedit ad labore dicta fugit!</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+            </div>
+        </div>
+
         <div class="big-container" style="margin-top: 155px ;">
             <div class="container">
                 <div class="flex__cont">
@@ -88,8 +138,8 @@
                         <h3 class="text-h3-req">реализуем самые смелые решения в россии!</h3>
                     </div>
                     <div class="flex__rightside">
-                        <button class="btn-req btn-text" style="width: 185px;">
-                            <img src="btn.svg" alt="button-icon" class="btn-icon">Ваш запрос</button>
+                        <a class="btn-req btn-text modal-trigger" style="width: 185px;" href="#modal1">
+                            <img src="btn.svg" alt="button-icon" class="btn-icon">Ваш запрос</a>
                     </div>
                 </div>
             </div>
@@ -265,8 +315,8 @@
                     <h3 class="text-h3-req">ОСТАВЬТЕ ЗАЯВКУ И МЫ СВЯЖЕМСЯ С ВАМИ!</h3>
                 </div>
                 <div class="flex__rightside">
-                    <button class="btn-req btn-text" style="width: 185px;">
-                        <img src="btn.svg" alt="button-icon" class="btn-icon">Ваш запрос</button>
+                    <a class="btn-req btn-text modal-trigger" style="width: 185px;" href="#modal2">
+                        <img src="btn.svg" alt="button-icon" class="btn-icon">Ваш запрос</a>
                 </div>
             </div>
         </div>
@@ -310,6 +360,9 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="materialize.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
