@@ -70,6 +70,7 @@ body {
     line-height: 21px;
   }
 
+
   .header {
     min-height: 740px;
     background-image: url(./photo/first-screen-bg.jpeg);
@@ -480,11 +481,6 @@ width: 100%;
     text-transform: uppercase;
     margin-bottom: 50px;
   }
-
-  .question__items {
-  }
-  .question__item {
-  }
 .question-h3 {
   text-transform: uppercase;
   color: var(--accent-color);
@@ -568,8 +564,6 @@ width: 34px;
 height: 29px;
   background-image: url(./shit.svg);
   margin-bottom: 19px;
-}
-.reviews__h4 {
 }
 
 .review__color {
@@ -1194,23 +1188,23 @@ a {
   overflow-y: auto;
 }
 
-.materialboxed {
-  display: block;
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
-  position: relative;
-  -webkit-transition: opacity .4s;
-  transition: opacity .4s;
-  -webkit-backface-visibility: hidden;
-}
-.materialboxed:hover:not(.active) {
-  opacity: .8;
-}
-.materialboxed.active {
-  cursor: -webkit-zoom-out;
-  cursor: zoom-out;
-}
-.carousel.scrolling .carousel-item .materialboxed,
-.carousel .carousel-item:not(.active) .materialboxed {
-  pointer-events: none;
-}
+  .materialboxed {
+    display: block;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    position: relative;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+    -webkit-backface-visibility: hidden;
+  }
+  .materialboxed:hover:not(.active) {
+    opacity: .8;
+  }
+  .materialboxed.active {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+  }
+  .carousel.scrolling .carousel-item .materialboxed,
+  .carousel .carousel-item:not(.active) .materialboxed {
+    pointer-events: none;
+  }
