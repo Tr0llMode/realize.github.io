@@ -8,6 +8,7 @@
     h1, h2, h3, h4, h5, h6 {
         padding: 0; /** Сброс автоматических отступов заголовков чтобы в будущем не было проблем */
         margin: 0; /** Сброс автоматических отступов заголовков чтобы в будущем не было проблем */
+        overflow-x: hidden;
     }
 
 
@@ -37,6 +38,7 @@ body {
   margin: 0;
   font-family: 'Oswald';
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 /** Cтили для текста */
@@ -1192,3 +1194,23 @@ a {
   overflow-y: auto;
 }
 
+.materialboxed {
+  display: block;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  position: relative;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+  -webkit-backface-visibility: hidden;
+}
+.materialboxed:hover:not(.active) {
+  opacity: .8;
+}
+.materialboxed.active {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+.carousel.scrolling .carousel-item .materialboxed,
+.carousel .carousel-item:not(.active) .materialboxed {
+  pointer-events: none;
+}
